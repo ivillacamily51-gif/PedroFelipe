@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #1e1e1e, #1e1e1e);
+  text-align: center;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.texto {
+  font-size: 18px;
+}
+
+.gif {
+  width: 200px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.foto {
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #ff4d6d;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #ff1e4d;
+}
+
+.mensagem {
+  display: none;
+  margin-top: 15px;
+  font-size: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+
+  background: #000; /* fundo preto */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+  background: black;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-repeat: repeat;
+
+  opacity: 0.6;
+  z-index: -1;
+
+  animation: moverEstrelas 60s linear infinite;
+}
+@keyframes moverEstrelas {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
